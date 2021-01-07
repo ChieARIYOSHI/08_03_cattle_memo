@@ -1,0 +1,87 @@
+body {
+  font-family: Roboto, "ヒラギノ角ゴ Pro W3", "メイリオ", "sans-serif", "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体";
+  background-color: #f6ecf7;
+}
+
+.input_main {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
+.input_main h1 {
+  font-size: 20px;
+  color: #555;
+  margin: 20px;
+}
+
+fieldset {
+  border-style: none;
+}
+
+.color {
+  height: 20px;
+  width: 5px;
+  background-color: #FF6ED8;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.input_item {
+  display: flex;
+  align-items: center;
+}
+
+.input_text {
+  height: 30px;
+  width: 300px;
+  font-size: 16px;
+  border-style: none;
+}
+
+textarea {
+  font-size: 16px;
+  border-style: none;
+}
+
+/* .food {
+  width: 320px;
+  color: black;
+  font-size: 12px;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  margin-top: 16px;
+} */
+
+.submit_btn {
+  width: 180px;
+  height: 30px;
+  border-radius: 30px;
+  color: #f6ecf7;
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: #FF6ED8;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 70px;
+}
