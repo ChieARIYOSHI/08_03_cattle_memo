@@ -121,8 +121,8 @@ if($now_day < $birth_day) {
         const jsonData = JSON.stringify(data);
         localStorage.setItem('<?= $record['id'] ?>_<?= $age ?>', jsonData);
         
-        console.log(data);
-        console.log(jsonData);
+        // console.log(data);
+        // console.log(jsonData);
       });
 
       //2.ページ読み込み：保存データ取得表示
@@ -133,17 +133,34 @@ if($now_day < $birth_day) {
         $('#current_weight').val(data.current_weight);
         $('#text_area').val(data.updated_date);
         $('#age').val(data.age);
-      }
+      };
 
       // 3.保存したデータを取得してグラフに表記
-      // const value = localStorage.getItem('20210107');
+      const info = {};
+      for(let key in localStorage) {
+        info[key] = localStorage.getItem(key);
+      }
+      // console.log(info);
+
+
+
+      // const value = localStorage.where('id', '=', '24').getItem('24_9');
       // console.log(value);
+
+      // $('.submit_btn').on('click', function() {
+      //   const value = localStorage.getItem(selectedItems)
+      //   const selectedItems = [];
+      //   localStorage.where('id', '=', '24').getItem(function() {
+
+      //   })
+      // })
+
       const data = {
-        labels: [1, 2, 3, 4, 5],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9],
         series: [
-          [5, 4, 3, 7, 5, 10],
-          [3, 2, 8, 5, 4, 6],
-          [2, 1, 3, 4, 2, 5]
+          [15, 25, 35, 45, 55, 60, 65, 70, 75],
+          [15, 22, 29, 36, 43, 50, 57, 65, 72],
+          // [2, 1, 3, 4, 2, 5]
         ]
       };
 
